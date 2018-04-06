@@ -10,7 +10,6 @@
 
   "scripts": {
     "start": "node index.js"
-  //"start": "open http://localhost:5000 && node index.js"
   },
   "author": "",
   "license": "ISC",
