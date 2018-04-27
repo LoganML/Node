@@ -1,0 +1,30 @@
+.fixed-bottom{
+	text-align:center;
+	border: inset;
+	border-color: gray;
+	
+	border-radius: 5px;
+	border-left: 6px;
+	background-color:gray;
+}
+
+.text{
+	margin-top:150px;
+	border-style: inset;
+	border-left: 6px;
+	border-radius: 5px;
+	
+
+}
+body {
+
+    font-size: 15px;
+    background-image: url("dust_scratches.png");
+    height: 100px;
+    position: relative;
+    border:0;
+}
+
+.title{
+	background-color:teal;
+}

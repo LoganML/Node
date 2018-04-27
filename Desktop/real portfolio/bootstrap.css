@@ -1,0 +1,60 @@
+.fixed{
+	text-align:center;
+	border: inset;
+	border-color: gray;
+	
+	border-radius: 5px;
+	border-left: 6px;
+	background-color:gray;
+	
+	margin:0;
+	padding:10px;
+	position: absolute;
+	right:0;
+	left:0;
+
+
+
+}
+
+.text{
+	margin-top:50px;
+	border-style: inset;
+	border-left: 6px;
+	border-radius: 5px;
+	
+
+}
+body {
+
+    font-size: 15px;
+    background-image: url("dust_scratches.png");
+    height: 100px;
+    position: relative;
+    border:0;
+}
+@media screen and (min-width: width:980px;){
+
+	body{
+		background-image: url("dust_scratches.png");
+	}
+	@media screen and (min-width: width:768px;){
+
+		body{
+			padding-top: 50px;
+		}
+		@media screen and (min-width: width:640px;){
+
+		body{
+			padding-top: 50px;
+		}
+
+.footer{
+	margin-bottom:0;
+}
+
+.title{
+	background-color:teal;
+}
+/* For mobile phones: */
+

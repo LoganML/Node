@@ -1,0 +1,38 @@
+<script>
+  /*    
+1- Have three options: Rock, Paper, and Scissors
+2- Pick one of the three options
+3- Rock versus paper, paper wins
+4- Rock versus scissors, rock wins
+5- Paper versus scissors, scissors wins
+*/
+
+//arrays
+var playerTwo = ["rock", "paper", "scissors"];
+var userText = prompt("Do you pick rock, paper, or scissors?");
+var randomItem = playerTwo[Math.floor(Math.random()*playerTwo.length)];
+if (userText === randomItem ) {
+        alert("Draw! You both picked the same one");
+}
+// else if (userText === "rock" && randomItem === "paper" ) {
+//         alert("Computer picked paper - you lose");
+// }
+else if (userText === "rock" && randomItem === "scissors" ) 
+        alert("Computer picked scissors - you win");
+
+        // else if (userText === "paper" && randomItem === "rock" ) 
+        // alert("Computer picked rock - you lose");
+
+        else if (userText === "paper" && randomItem === "scissors" ) 
+        alert("Computer picked scissors - you win");
+
+        // else if (userText === "scissors" && randomItem === "rock" ) 
+        // alert("Computer picked rock - you lose");
+
+        else if (userText === "scissors" && randomItem === "paper" ) 
+        alert("Computer picked paper - you win");
+
+        else
+        alert("You LOSE! Computer picked " + randomItem)
+</script>
+

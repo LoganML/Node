@@ -1,0 +1,44 @@
+.text{
+    margin-top:100px;
+    border-style: inset;
+    border-left: 6px;
+    border-radius: 5px;
+    margin-bottom:100px;
+    
+}
+
+.fixed-bottom{
+    text-align: center;
+    border-style: inset;
+    border-left: 6px;
+    border-radius: 5px;
+    background-color: gray;
+}
+body {
+
+    font-size: 15px;
+    background-image: url("dust_scratches.png");
+    height: 100px;
+    position: relative;
+    border:0;
+}
+.title{
+    background-color: teal;
+}
+@media (min-width:481px) and (max-width: 768px){
+    .text{ width:400px; }
+    .container{ width:400px; }
+    
+
+}
+
+@media (min-width: 321px) and (max-width: 480px){
+    .text{ width: 450px; }
+    .container{ width: 450px; }
+}
+
+@media (max-width: 320px){
+    .text{ width: 250px; }
+    .container{ width: 250px; }
+    
+}

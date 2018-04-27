@@ -1,0 +1,17 @@
+body{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+
+}
+.blue{
+	color: blue;
+	font-family: "Palatino Linotype" Palatino, serif;
+}
+.title{
+	color: blue;
+	font-size: 35;
+}
+.picofme{
+	border: 2px solid gray;
+}

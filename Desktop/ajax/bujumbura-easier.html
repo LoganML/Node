@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bujumbura Data</title>
+</head>
+
+<body>
+  <!-- Retrieved data will be dumped here -->
+  <div class="city"></div>
+  <div class="wind"></div>
+  <div class="humidity"></div>
+  <div class="temp"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=17d50191c38551d2fc554438979336f2",
+  "method": "GET",
+  
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+    // This is our API key. Add your own API key between the ""
+   
+    // Here we are building the URL we need to query the database
+    
+
+    // We then created an AJAX call
+    
+
+      // Create CODE HERE to Log the queryURL
+      
+      // Create CODE HERE to log the resulting object
+     
+      // Create CODE HERE to transfer content to HTML
+      // Create CODE HERE to calculate the temperature (converted from Kelvin)
+      // Hint: To convert from Kelvin to Fahrenheit: F = (K - 273.15) * 1.80 + 32
+      // Create CODE HERE to dump the temperature content into HTML
+
+    
+  </script>
+</body>
+
+</html>

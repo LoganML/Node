@@ -1,0 +1,40 @@
+.jumbotron{
+	opacity:0.9;
+	
+
+       
+
+}
+.card{
+	opacity: .9;
+	background-color
+}
+.accordionButton{
+	width: 100%;
+	background-color: #C3CACC;
+
+}
+
+
+
+
+body{background-image: url("../images/foodimage.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    @media screen and (min-width: width:980px;){
+
+        @media screen and (min-width: width:768px;){
+
+		body{
+			padding-top: 50px;
+		}
+		@media screen and (min-width: width:640px;){
+
+		body{
+			padding-top: 50px;
+		}
+ 
+}

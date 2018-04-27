@@ -3,13 +3,13 @@ $(document).ready(function() {
 var topics = [];
 
 	//Function with AJAX call to GIPHY; Q parameterc for API link set to search term, limit 10 results
-  //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
- 	function displayNetflixShow() {
+  //Create div with  still and animate image sources with "data-state", "data-still" and "data-animate" attributes
+ 	function displayGIPHY() {
 
 	var x = $(this).data("search");
 	console.log(x);
 
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=7SlfZ5GZOalcYWFExn2BZmOlPYTh2poL&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 	console.log(queryURL);
 
@@ -30,7 +30,7 @@ var topics = [];
         	var p = $("<p>").text("Rating: " + rating);
 
         	showImage.attr("src", staticSrc);
-        	showImage.addClass("netflixGiphy");
+        	showImage.addClass("showGiphy");
         	showImage.attr("data-state", "still");
         	showImage.attr("data-still", staticSrc);
         	showImage.attr("data-animate", defaultAnimatedSrc);
@@ -43,12 +43,12 @@ var topics = [];
 }
 
   //Submit button click event takes search term from form input, trims and pushes to topics array, displays button
-	$("#addShow").on("click", function(event) {
+	$("#addGiphy").on("click", function(event) {
         event.preventDefault();
-        var newShow = $("#netflixInput").val().trim();
+        var newShow = $("#gifinput").val().trim();
         topics.push(newShow);
         console.log(topics);
-        $("#netflixInput").val('');
+        $("#gifinput").val('');
         displayButtons();
       });
 
@@ -67,11 +67,11 @@ var topics = [];
 
   displayButtons();
 
-  //Click event on button with id of "show" executes displayNetflixShow function
-  $(document).on("click", "#show", displayNetflixShow);
+  //Click event on button with id of "show" executes displayGIPHY function
+  $(document).on("click", "#show", displayGIPHY);
 
-  //Click event on gifs with class of "netflixGiphy" executes pausePlayGifs function
-  $(document).on("click", ".netflixGiphy", pausePlayGifs);
+  //Click event on gifs with class of "showGiphy" executes pausePlayGifs function
+  $(document).on("click", ".showGiphy", pausePlayGifs);
 
   //Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"
   function pausePlayGifs() {
@@ -86,3 +86,4 @@ var topics = [];
 }
 
 });
+// 

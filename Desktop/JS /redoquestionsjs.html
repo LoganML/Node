@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us"
+<head>
+<meta charset="UTF-8">
+    <title>Question Game</title>
+  </head>
+  <body>
+
+    <h1>Question Game!</h1>
+
+    <p id="score"></p>
+    <p id="question"></p>
+
+    <script>
+
+//variables 
+
+// the questions for the game
+    	var questions = { 
+    		q1 ["The ocean is Salty.", "t"]
+    		q2: ["There are 365 days in a year","t"]
+    		q3: ["Woodstock was a recent event, within the past 3 years", "f"]
+    		q4: ["There are four Lord of the Rings books", "f"]
+    		q5: ["This assignment is stupid", "f"]
+
+
+    	};
+//score starts at 0
+var score = 0
+// index of current question
+var questionIndex = 0
+ // array of questions
+var questionArray = [questions.q1, questions.q2, questions.q3, questions.q4, questions.q5]
+
+//render functions
+function renderQestion(){
+	// If there are still more questions, show the next one
+	if (questionIndex)<=(questionArray.length -1)){
+	document.querySelector("#question").innerHTML = questionsArray
+		[questionIndex][0]
+}
+// if there aren't, show end game screens
+else{
+	document.querySelector("question").innerHTML = "Game Over!";
+	document.querySelector("score").innerHTML = "Final Score!"
+		score+ " out of " + questionsArray.length
+}
+}
+
+//score function
+function updateScore() {
+	document.querySelector("#score").innerHTML = "Score" + score;
+	// body...
+}
+
+
+// main process
+renderQestion();
+updateScore();
+
+
+document.onkeyup = function(e) {
+// If there are no more questions, stop function
+	if (questionIndex === questionsArray.length){
+		return;
+	}
+
+
+//deteremine which key was pressed, make it lowercase, and set it to the userInput variable.
+
+var userInput = String.fromCharCode(event.which).toLowerCase();
+// only run this code if "t" or "f" were pressed.
+
+if (userInput === "t" || userInput === "f"{
+//if they guess the answer correclty, increase score, alert they got it right.
+
+if (userInput === questionsArray[questionIndex][1]) {
+	alert("Correct!");
+	score++;
+	updateScore();
+
+}
+else {
+	alert("Wrong!");
+
+}
+
+
+questionIndex++;
+renderQestion();
+}
+};
+</script>
+</body>
+</html>
+
